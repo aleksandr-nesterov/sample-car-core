@@ -1,4 +1,4 @@
-package com.spaniard;
+package com.spaniard.properties;
 
 import lombok.Getter;
 import lombok.Setter;

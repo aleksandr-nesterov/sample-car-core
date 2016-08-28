@@ -1,8 +1,12 @@
 configuration:
-  bootstrapServers : localhost:9092
+  bootstrapServers : 192.168.1.154:9092
   groupId : car
   enableAutoCommit : true
   autoCommitIntervalMs : 1000
   sessionTimeoutMs : 30000
   keyDeserializer : org.apache.kafka.common.serialization.StringDeserializer
   valueDeserializer : org.apache.kafka.common.serialization.StringDeserializer
+
+kafkaListenerConfig :
+  concurrency : 3
+  pollTimeout : 3000
